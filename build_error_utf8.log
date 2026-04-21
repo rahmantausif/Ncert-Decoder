@@ -1,0 +1,165 @@
+﻿
+> temp@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.2.4 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+node.exe : Error: Cannot 
+apply unknown utility 
+class `border-border`. 
+Are you using CSS modules 
+or similar and missing 
+`@reference`? https://tail
+windcss.com/docs/functions
+-and-directives#reference-
+directive
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (E  
+  rror: Cannot a...renc   
+ e-directive:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+    [2m[at 
+onInvalidCandidate (C:\Use
+rs\Asus\Desktop\ncert deco
+der\node_modules\tailwindc
+ss\dist\lib.js:21:1314)][
+0m
+    [2m[at Ee (C:\Users\A
+sus\Desktop\ncert decoder\
+node_modules\tailwindcss\d
+ist\lib.js:16:37066)][0m
+    [2m[at C:\Users\Asus\
+Desktop\ncert decoder\node
+_modules\tailwindcss\dist\
+lib.js:21:355][0m
+    [2m[at _r (C:\Users\A
+sus\Desktop\ncert decoder\
+node_modules\tailwindcss\d
+ist\lib.js:3:1733)][0m
+    [2m[at I (C:\Users\As
+us\Desktop\ncert decoder\n
+ode_modules\tailwindcss\di
+st\lib.js:3:1377)][0m
+    [2m[at Te (C:\Users\A
+sus\Desktop\ncert decoder\
+node_modules\tailwindcss\d
+ist\lib.js:21:172)][0m
+    [2m[at mn (C:\Users\A
+sus\Desktop\ncert decoder\
+node_modules\tailwindcss\d
+ist\lib.js:38:294)][0m
+    [2m[at process.proces
+sTicksAndRejections (node:
+internal/process/task_queu
+es:105:5)][0m
+    [2m[at async gn (C:\U
+sers\Asus\Desktop\ncert de
+coder\node_modules\tailwin
+dcss\dist\lib.js:38:631)]
+[0m
+    [2m[at async Xr (C:\U
+sers\Asus\Desktop\ncert de
+coder\node_modules\@tailwi
+ndcss\node\dist\index.js:1
+0:3416)][0m
+
+> Build error occurred
+Error: Turbopack build 
+failed with 1 errors:
+./src/app/globals.css
+Error evaluating Node.js 
+code
+CssSyntaxError: 
+tailwindcss: C:\Users\Asus
+\Desktop\ncert decoder\src
+\app\globals.css:1:1: 
+Cannot apply unknown 
+utility class 
+`border-border`. Are you 
+using CSS modules or 
+similar and missing 
+`@reference`? https://tail
+windcss.com/docs/functions
+-and-directives#reference-
+directive
+    at Input.error (node_m
+odules/postcss/lib/input.j
+s:135:16) [C:\Users\Asus\D
+esktop\ncert decoder\.next
+\build\chunks\node_modules
+_13sb.px._.js:4667:22]
+    at error (node_modules
+/postcss/lib/node.js:146:3
+2) [C:\Users\Asus\Desktop\
+ncert decoder\.next\build\
+chunks\node_modules_13sb.p
+x._.js:943:38]
+    [at Object.Once (C:\Us
+ers\Asus\Desktop\ncert dec
+oder\node_modules\@tailwin
+dcss\postcss\dist\index.js
+:10:6913)]
+    [at process.processTic
+ksAndRejections (node:inte
+rnal/process/task_queues:1
+05:5)]
+    at async 
+LazyResult.runAsync (node_
+modules/postcss/lib/lazy-r
+esult.js:293:11) [C:\Users
+\Asus\Desktop\ncert decode
+r\.next\build\chunks\node_
+modules_13sb.px._.js:6230:
+21]
+    at async transform (tu
+rbopack:///[turbopack-node
+]/transforms/postcss.ts:70
+:34) [C:\Users\Asus\Deskto
+p\ncert decoder\.next\buil
+d\chunks\[root-of-the-serv
+er]__0d-m0h0._.js:146:36]
+    at async run (turbopac
+k:///[turbopack-node]/chil
+d_process/evaluate.ts:89:2
+3) [C:\Users\Asus\Desktop\
+ncert decoder\.next\build\
+chunks\[root-of-the-server
+]__0ubbtyl._.js:443:31]
+
+Import trace:
+  Client Component 
+Browser:
+    ./src/app/globals.css 
+[Client Component Browser]
+    ./src/app/layout.tsx 
+[Server Component]
+
+
+    at async transform (tu
+rbopack:///[turbopack-node
+]/transforms/postcss.ts:70
+:34) [C:\Users\Asus\Deskto
+p\ncert decoder\.next\buil
+d\chunks\[root-of-the-serv
+er]__0d-m0h0._.js:146:36])
+    at async run (turbopac
+k:///[turbopack-node]/chil
+d_process/evaluate.ts:89:2
+3) [C:\Users\Asus\Desktop\
+ncert decoder\.next\build\
+chunks\[root-of-the-server
+]__0ubbtyl._.js:443:31])
