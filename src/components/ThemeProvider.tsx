@@ -20,17 +20,19 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>("light");
   const [mounted, setMounted] = useState(false);
 
-  // On mount, read saved preference or system preference
+  // On mount, read saved preference or default to light
   useEffect(() => {
     const saved = localStorage.getItem("theme") as Theme | null;
+
     if (saved === "light" || saved === "dark") {
       setTheme(saved);
       document.documentElement.classList.toggle("dark", saved === "dark");
     } else {
-      // Default to dark
+      // Default to light
       setTheme("light");
-      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("dark");
     }
+
     setMounted(true);
   }, []);
 
@@ -38,6 +40,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const next = theme === "dark" ? "light" : "dark";
     setTheme(next);
     localStorage.setItem("theme", next);
+
     if (next === "dark") {
       document.documentElement.classList.add("dark");
     } else {
@@ -45,7 +48,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
-  // Prevent flash: always render children, but inject a script to set class early
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
