@@ -28,7 +28,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       document.documentElement.classList.toggle("dark", saved === "dark");
     } else {
       // Default to dark
-      setTheme("dark");
+      setTheme("light");
       document.documentElement.classList.add("dark");
     }
     setMounted(true);
